@@ -25,9 +25,12 @@
     align-items: center;
 }
 
-.icons{ 
-    width: 219.01px;
+.icons{
     display: flex;
+}
+
+.fa-facebook{
+    width:8.97px;
 }
 
 .tw{
@@ -103,8 +106,6 @@
 }
 
 .bg-img{
-    width: 1920px;
-    height: 800px;
     position: absolute;
     opacity: 0.871;
     z-index: -1;
