@@ -13,11 +13,10 @@
     align-items: center;
 }
 
-.container{
+.vessel{
     margin: auto;
     width: 60.9375%;
 }
-
 
 .header{
     height: 40px;
@@ -29,6 +28,22 @@
 .icons{ 
     width: 219.01px;
     display: flex;
+}
+
+.tw{
+    margin-left:11px;
+}
+
+.pin, .vk, .ins{
+    margin-left:7px;
+}
+
+.gplus, .be{
+    margin-left:13px;
+}
+
+.db{
+    margin-left:10px;
 }
 
 .icons a{
