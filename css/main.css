@@ -19,7 +19,7 @@
 }
 
 .header{
-    height: 40px;
+    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +109,7 @@
     position: absolute;
     opacity: 0.871;
     z-index: -1;
-    filter: brightness(20%);
+    filter: brightness(10%);
 }
 
 .navbar_container{
@@ -138,8 +138,8 @@
 }
 
 .nav ul{
-    width: 779px;
-    margin-left:95px;
+    height: inherit;
+    margin-left:85px;
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -154,18 +154,56 @@
     text-decoration: none;
 }
 
+.home::after{
+    content:"";
+    display: block;
+    width: 80px;
+    height: 4px;
+    transition: 0.4s;
+    background: #ff4081;
+}
+
 .mat-icons2{
     font-size: 18px;
     margin-top:1px;
 }
 
+.expand-home{
+    margin-left: 6px;
+    margin-right: 23px;
+}
+.expand-portfolio{
+    margin-left: 5px;
+    margin-right: 24px;
+}
+.expand-blog{
+    margin-left: 3px;
+    margin-right: 25px;
+}
+.expand-pages{
+    margin-left: 6px;
+    margin-right: 25px;
+}
+.expand-shop{
+    margin-left: 5px;
+    margin-right: 23px;
+}
+.expand-components{
+    margin-left: 6px;
+    margin-right: 25px;
+}
+.expand-features{
+    margin-left: 6px;
+}
+
 .nav_icons{
-    width: 146px;
     height: 40px;
     display: flex;
+    margin-right: 15px;
     align-items: center;
     font-size: 23px;
     padding-left:12px;
+
 }
 
 .nav_icons a{
@@ -205,8 +243,6 @@
 }
 
 .quo > div{
-    width: 848px;
-    height: 81px;
     margin: 15px 157px 0px 165px;
     display: inline-block;
     font-size:42px;
@@ -216,3 +252,4 @@
     color: #ffffff;
     text-align: center;
 }
+
