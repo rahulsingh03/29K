@@ -5,6 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .header_TopMenu{
     height: 40px;
     background-color: #191919;
@@ -12,8 +17,7 @@
 
 .vessel{
     margin: auto;
-    width: 60.9375%;
-    /* width: 1170px; */
+    width: 1170px;
 }
 
 .header{
@@ -25,10 +29,6 @@
 
 .icons{
     display: flex;
-}
-
-.fa-facebook{
-    width:8.97px;
 }
 
 .tw{
@@ -63,63 +63,55 @@
 }
 
 .signIn{
-    width: 165px;
     display: flex;
+}
+
+.signIn a{
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 10px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    align-items: center;
-}
-.signIn a{
-    text-decoration: none;
+    color: #929292;
 }
 
 .signIn a p{
     margin-left: 6px;
-    color: #ffffff;
-    opacity: 0.802;
+}
+
+.header_pipe{
+    border-right: 1px solid #929292;
+    margin-top: 2px;
+    height: 20px;
+    padding: 0px 7.5px;
+}
+
+.lang_i{
+    margin-left:14px;
 }
 
 .mat-icons1{
     font-size: 18px;
-    color: #ffffff;
-    opacity:0.380;
 }
 
-.lang_i{
-    margin-left: 14.1px;
-}
-
-.header_pipe{
-    border-right: 1px solid #b4b4b4;
-    margin-top: 2px;
-    height: 20px;
-    padding: 0px 7px;
-    opacity: 0.502;
-}
-
-.header_pipe::after{
-    padding-right: 7px;
-}
-
-.bg-img{
-    position: absolute;
-    opacity: 0.871;
-    z-index: -1;
-    filter: brightness(10%);
+.mat-icons1-ex{
+    margin-right: -3px;
 }
 
 .navbar_container{
     height: 66px;
     color: #ffffff;
+    background: url("../images/bg.png") no-repeat center ;
+    opacity: .5;
 }
 
 .navbar{
     height: inherit;
     display: flex;
     justify-content: space-between;
-    margin-top:20px;
+    margin-top:18px;
 }
 
 .logo a{
@@ -164,7 +156,7 @@
 }
 
 .mat-icons2{
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 2px;
 }
 
