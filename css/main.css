@@ -29,22 +29,19 @@ html a{
 
 .icons{
     display: flex;
+    margin-top: 2px;
 }
 
-.tw{
-    margin-left:11px;
+.icons a{
+    margin-right:14px;
 }
 
-.pin, .vk, .ins{
-    margin-left:7px;
-}
-
-.gplus, .be{
-    margin-left:13px;
+.vk{
+    margin-left:2px;
 }
 
 .db{
-    margin-left:10px;
+    margin-left:2px;
 }
 
 .icons a{
@@ -101,17 +98,14 @@ html a{
 }
 
 .navbar_container{
-    height: 66px;
     color: #ffffff;
-    background: url("../images/bg.png") no-repeat center ;
-    opacity: .5;
+    background: url("../images/bg.png") no-repeat center;
 }
 
 .navbar{
-    height: inherit;
     display: flex;
     justify-content: space-between;
-    margin-top:18px;
+    padding-top:18px;
 }
 
 .logo a{
@@ -128,7 +122,8 @@ html a{
 }
 
 .nav{
-    margin-left:85px;
+    margin-left:73px;
+    margin-top:6px;
 }
 
 .nav ul{
@@ -138,43 +133,48 @@ html a{
 }
 
 .nav ul a{
+    display: flex;
+    align-items: center;
     color: #ffffff;
-    font-size: 13.3px;
+    font-size: 13.1px;
     font-weight: 700;
     letter-spacing: 0.8px;
-    text-transform: uppercase;
-    text-decoration: none;
+    text-transform: uppercase
+}
+
+.home-w{
+    margin-left: 15px;
 }
 
 .nav li:nth-child(1):after{
     content:"";
     display: block;
-    width: 75%;
+    width: 80px;
     height: 4px;
-    margin-top:20px;
+    margin-top:21px;
+    margin-left:1px;
     background: #ff4081;
 }
 
 .mat-icons2{
     font-size: 20px;
-    padding-top: 2px;
+    padding-top: 1px;
 }
-
 .expand-home{
-    margin-left: 6px;
-    margin-right: 23px;
+    margin-left: 5px;
+    margin-right: 22px;
 }
 .expand-portfolio{
     margin-left: 5px;
-    margin-right: 24px;
+    margin-right: 23px;
 }
 .expand-blog{
     margin-left: 3px;
-    margin-right: 25px;
+    margin-right: 24px;
 }
 .expand-pages{
-    margin-left: 6px;
-    margin-right: 25px;
+    margin-left: 5px;
+    margin-right: 24px;
 }
 .expand-shop{
     margin-left: 5px;
@@ -182,7 +182,7 @@ html a{
 }
 .expand-components{
     margin-left: 6px;
-    margin-right: 25px;
+    margin-right: 23px;
 }
 .expand-features{
     margin-left: 6px;
