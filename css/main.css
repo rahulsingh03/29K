@@ -264,12 +264,19 @@ li.nav-active:after{
     word-spacing: 3px;
 }
 
-.profile_pic{
+.profile{
     margin-top:80px;
     text-align: center;
+    font-size:14px;
+    font-weight: 700;
 }
 
-.profile_pic img{
+.profile img{
     margin-right: 5px;
     border-radius: 50%;
+}
+
+.profile p{
+    margin:12px 5px;
+    letter-spacing: 0.5px;
 }
