@@ -146,7 +146,7 @@ html a{
     margin-left: 15px;
 }
 
-.nav li:nth-child(1):after{
+li.nav-active:after{
     content:"";
     display: block;
     width: 80px;
@@ -198,15 +198,9 @@ html a{
 
 }
 
-.nav_icons a{
-    text-decoration: none;
-    color: inherit;
-}
-
 .nav_pipe{
     border-right: 1px solid #b4b4b4;
     height: 30px;
-    opacity: 0.502;
     margin-bottom: 7px;
 }
 .nav_pipe1{
@@ -219,7 +213,7 @@ html a{
 }
 
 .title_c{
-    margin-top: 217px;
+    margin-top: 193px;
 }
 
 .title_c > p{
@@ -231,14 +225,51 @@ html a{
     text-transform: uppercase;
     text-align: center;
 }
+.title_c span{
+    font-size:42px;
+    margin-top: -56px;
+}
+
+.left_a{
+    float: left;
+    margin-left:28px;
+}
+.right_a{
+    float: right;
+    margin-right:28px;
+}
 
 .quo > div{
-    margin: 15px 157px 0px 165px;
-    display: inline-block;
-    font-size:42px;
+    margin-top: 16px;
+    font-size:40px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
     text-align: center;
+}
+
+.read_btn{
+    width:169px;
+    height: 45px;
+    margin-top:32px;
+    padding: 13px 26px;
+    border-radius: 22px;
+    background-color: #303f9f;
+}
+
+.read_btn p{
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-left:1px;
+    word-spacing: 3px;
+}
+
+.profile_pic{
+    margin-top:80px;
+    text-align: center;
+}
+
+.profile_pic img{
+    margin-right: 5px;
+    border-radius: 50%;
 }
