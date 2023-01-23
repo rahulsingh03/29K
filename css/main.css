@@ -299,20 +299,25 @@ li.nav-active:after{
 
 .stats{
     font-size:11.5px;
-    margin:32px 24px 0px 0px;
+    padding:33px 20px 32px 0px;
 }
 .stats span{
     font-size:16px;
-    margin-right:7px;
-    margin-left: 20px;
+    margin-right:6px;
+
 }
-.stats span:nth-child(even){
+/* .stats span:nth-child(even){
     margin-left: 27px;
     margin-right:5px;
-}
+} */
 
 .stats p{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.stats p a{
+    display: flex;
+    margin-right: 20px;
+    margin-left: 21px;
 }
