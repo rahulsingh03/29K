@@ -9,6 +9,10 @@
     display: none;
 }
 
+:root{
+    --blue: #3f51b5;
+}
+
 html a {
     text-decoration: none;
     color: #ffffff;
@@ -380,15 +384,16 @@ li.nav-active:after {
 }
 
 a.content-active {
-    border: 1px solid #3f51b5;
+    border: 1px solid var(--blue);
     padding: 7px 28px;
     background-color: #ffffff;
-    color: #3f51b5;
+    color: var(--blue);
 }
 
 .vessel1 {
     margin-left: auto;
     width: 1545px;
+    display: flex;
 }
 
 .articles {
@@ -698,7 +703,7 @@ a.content-active {
 .article7-img-nav span{
     margin-top:6px;
     margin-left: 6px;
-    color:#3f51b5;
+    color:var(--blue);
 }
 
 .nav-l{
@@ -744,7 +749,7 @@ a.content-active {
 }
 
 .article9-heading p{
-    color:#3f51b5;
+    color:var(--blue);
 }
 
 .article8-9-heading + p{
@@ -764,4 +769,39 @@ a.content-active {
 
 .article9-img{
     background: url("../images/article9.png");
+}
+
+.more-articles{
+    color: var(--blue);
+    float: right;
+    display: flex;
+    align-items: center;
+    margin:43px 0px;
+}
+
+.more-articles p{
+    font-size:15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.more-articles a{
+    color: var(--blue);
+    margin-left:8px;
+}
+
+.more-articles a > div {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border-radius: 21px;
+    filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.12));
+    background-color: #ffffff;
+}
+
+.more-articles a > div span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
