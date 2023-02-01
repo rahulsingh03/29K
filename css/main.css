@@ -1022,7 +1022,7 @@ li.end-category{
     display: flex;
     border-radius: 4px;
     overflow: auto;
-    margin-top:19px;
+    margin:19px 0px 20px 0px;
 }
 
 .get-posts p{
@@ -1039,4 +1039,54 @@ li.end-category{
 .get-posts .recent-post{
     background-color: var(--blue);
     color: #ffffff;
+}
+
+.recent-articles{
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee5e9;
+}
+
+.end-recent-articles{
+    border: none;
+}
+
+.recent-articles img{
+    width: 100px;
+    height: 80px;
+}
+
+.recent-articles-content{
+    margin-left:15px;
+}
+
+.recent-articles-content p{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.recent-articles-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+
+.recent-articles-stats span{
+    font-size: 14px;
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+.recent-articles-stats p{
+    font-size:11px;
+}
+
+
+.recent-articles-stats + p{
+    font-size:14px;
+    font-weight: 700;
+    line-height: 1.5;
 }
