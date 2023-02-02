@@ -1090,3 +1090,102 @@ li.end-category{
     font-weight: 700;
     line-height: 1.5;
 }
+
+.filter-category{
+    margin-top:31px;
+}
+
+.filter-category-list{
+    margin-top:20px;
+    display: grid;
+    grid-template-areas:'category-1 category-2 .'
+                        'category-3  category-4 category-5' 
+                        'category-6 category-7 .';
+    gap: 10px;
+}
+
+.filter-category-list p{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eeeeee;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.filter-category-1{ grid-area: category-1; width: 120px;}
+.filter-category-2{ grid-area: category-2; width: 110px; margin-left: -15px;}
+.filter-category-3{ grid-area: category-3; width: 100px; margin-left: -1px;}
+.filter-category-4{ grid-area: category-4; width: 80px; margin-left: -34px;}
+.filter-category-5{ grid-area: category-5; width: 60px; margin-left: -65px;}
+.filter-category-6{ grid-area: category-6; width: 130px;}
+.filter-category-7{ grid-area: category-7; width: 110px; margin-left: -4px;}
+
+.footer a{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.footer-insta-posts{
+    display: flex;
+}
+
+.footer-insta-posts img{
+    height: 240px;
+}
+
+.footer-sub-form{
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/footer-sub-form.png") no-repeat center;
+    background-size: cover;
+
+}
+
+.footer-sub-formfield{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.footer-sub-formfield div > p{
+    font-size:41px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+    word-spacing: -3px;
+    margin:-4px 11px 0px 0px;
+}
+
+.footer-sub-formfield div input{
+    width: 270px;
+    height: 45px;
+    padding: 0px 18px;
+    border-radius: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #303030;
+    border: 1px solid #b6b2b2;
+    color: #ffffff;
+}
+
+.footer-sub-form-submit{
+    width: 170px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: #303f9f;
+}
+
+.footer-sub-form-submit p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 1.2px;
+}
+
+
