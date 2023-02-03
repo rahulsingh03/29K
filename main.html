@@ -555,7 +555,88 @@
                 </div>
             </div>
         </div>
+
+        <div class="top-widgets">
+            <div class="vessel top-widgets-container">
+                <div class="pages-widget">
+                    <p class="widget-title">PAGES WIDGET</p>
+
+                    <div class="accordion">
+                        <p>HOME</p>
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="panel">
+                    </div>
+
+                    <div class="accordion">
+                        <p>PAGES</p>
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="panel">
+                        <p><a href="#">Service</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">About</a></p>
+                    </div>
+
+                    <div class="accordion">
+                        <p>PORTFOLIO</p>
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="panel">
+                    </div>
+
+                    <div class="accordion">
+                        <p>BLOG</p>
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="panel">
+                    </div>
+
+                    <div class="accordion">
+                        <p>SHOP</p>
+                        <span class="material-icons">add</span>
+                    </div>
+                    <div class="panel">
+                    </div>
+
+                </div>
+                <div class="twitter-widget">
+                    <p class="widget-title">TWITTER WIDGET</p>
+                </div>
+                <div class="flickr-widget">
+                    <p class="widget-title">FLICKR WIDGET</p>
+                </div>
+                <div class="newsletter-widget">
+                    <p class="widget-title">NEWS LETTER</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+              this.getElementsByTagName('span')[0].innerHTML = 'add';
+              this.style.marginBottom = '5px';
+              this.style.borderBottomLeftRadius = '4px';
+              this.style.borderBottomRightRadius = '4px';
+            } else {
+              panel.style.display = "block";
+              this.getElementsByTagName('span')[0].innerHTML = 'remove';
+              this.style.marginBottom = '0px';
+              this.style.borderBottomLeftRadius = '0px';
+              this.style.borderBottomRightRadius = '0px';
+            }
+          });
+        }
+    </script>
     
 </body>
 </html>
