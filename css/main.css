@@ -1226,6 +1226,7 @@ li.end-category{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.6px;
+    color: #d6d6d6;
 }
 
 .panel{
@@ -1246,5 +1247,65 @@ li.end-category{
 
 .panel a{
     font-family: 'Open Sans', sans-serif;
-    color: #b6b2b2;
+    color: #a5a4a4;
 }
+
+.tweets{
+    border-bottom: 1px solid #646464;
+    margin-top: 14px;
+    padding-bottom: 8px;
+
+}
+
+.tweets i{
+    color: #55acee;
+    font-size: 24px;
+    margin-right: 14px;
+}
+
+.tweet_vessel{
+    display: flex;
+    padding-left: 9px;
+    margin-top: -3px;
+}
+
+.tweet_vessel p{
+    margin-right: 30px;
+}
+
+.tweets a{
+    font-size: 12px;
+    color: #c0c0c0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.tweet_vessel a {
+    font-size:13.5px;
+    color: #d6d6d6;
+    line-height: 1.45;
+    letter-spacing: 0.4px;
+    word-spacing: 0.5px;
+}
+
+.tweet-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.tweet-info span{
+    font-size:15px;
+}
+
+.tweet-info > a{
+    margin-top:5px;
+}
+
+.tweet-opt a{
+    text-decoration: underline;
+    margin-right: 8px;
+}
+
+
+
