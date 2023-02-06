@@ -1326,6 +1326,10 @@ li.end-category{
     margin-left:-3px;
 }
 
+.flickr-newsletter-title{
+    margin-bottom: 26px;
+}
+
 .flickr-widget-collage{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -1333,7 +1337,7 @@ li.end-category{
     grid-row-gap: 4px;
 }
 
-.newsletter-widget div > input{
+.newsletter-widget div > input, .newsletter-widget div > textarea{
     width: 270px;
     height: 45px;
     border-radius: 4px;
@@ -1350,7 +1354,7 @@ li.end-category{
     margin-top: 10px;
 }
 
-.newsletter-widget input:nth-child(1){
-    padding-bottom: 120px;
+.newsletter-widget div:nth-child(4) textarea{
+    height: 120px;
 }
 
