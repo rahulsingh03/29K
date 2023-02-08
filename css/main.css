@@ -13,6 +13,12 @@
     --blue: #3f51b5;
 }
 
+button{
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+
 .navbar_container a{
     text-decoration: none;
     color: #ffffff;
@@ -81,6 +87,7 @@
 }
 
 .mat-icons1 {
+    margin-right: 6px;
     font-size: 18px;
 }
 
@@ -104,11 +111,6 @@
 }
 
 .logo a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.logo span {
     text-transform: uppercase;
     margin: -2px;
     font-size: 23px;
@@ -127,7 +129,7 @@
     list-style-type: none;
 }
 
-.nav ul a {
+.nav > ul a {
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -144,14 +146,14 @@
 li.nav-active::after {
     content: "";
     display: inline-block;
-    width: 80px;
+    width: 80%;
     height: 4px;
     margin-top: 21px;
     margin-left: 1px;
     background: #ff4081;
 }
 
-.mat-icons2 {
+.nav > ul span {
     font-size: 20px;
     padding-top: 1px;
 }
@@ -267,7 +269,7 @@ li.nav-active::after {
     background-color: #303f9f;
 }
 
-.read_btn p {
+.read_btn a {
     letter-spacing: 1px;
     font-weight: 400;
     padding-left: 1px;
@@ -483,9 +485,10 @@ a.content-active {
     letter-spacing: 0.6px;
 }
 
-.auth1-details p {
+.auth1-details a:nth-child(1) {
     font-size: 13.5px;
     font-weight: 600;
+    display: block;
     margin-bottom: 6px;
 }
 
@@ -604,7 +607,8 @@ a.content-active {
     border-radius: 50%;
 }
 
-.auth2-9-details p {
+.auth2-9-details a:nth-child(1) {
+    display: block;
     font-size: 13.5px;
     font-weight: 600;
     margin-bottom: 6px;
@@ -886,16 +890,17 @@ li.end-category{
     margin-top:30px;
 }
 
-.newsletter-form > p, .newsletter input{
+.newsletter-form > label, .newsletter input:not(:nth-last-child(1)){
     font-family: 'Open Sans', sans-serif;
 }
 
-.newsletter-form > p{
+.newsletter-form > label{
+    display: inline-block;
     margin: 11px 0px 10px -1px;
     letter-spacing: 1px;
 }
 
-.newsletter input{
+.newsletter input:not(:nth-last-child(1)){
     width: 270px;
     height: 45px;
     border-radius: 4px;
@@ -913,8 +918,6 @@ li.end-category{
     height: 45px;
     border-radius: 4px;
     background-color: var(--blue);
-    text-align: center;
-    color: #ffffff;
 }
 
 .sub-btn p{
@@ -965,6 +968,9 @@ li.end-category{
     height: 36px;
     border-radius: 18px;
     text-align: center;
+}
+
+.followonsocials a{
     margin-right: 10px;
 }
 
@@ -1009,7 +1015,7 @@ li.end-category{
     margin:19px 0px 20px 0px;
 }
 
-.get-posts p{
+.get-posts a{
     width: 135px;
     height: 40px;
     font-size:11px;
@@ -1064,7 +1070,7 @@ li.end-category{
     margin-right: 5px;
 }
 
-.recent-articles-stats p{
+.recent-articles-stats a{
     font-size:11px;
 }
 
@@ -1083,7 +1089,7 @@ li.end-category{
     margin-top:20px;
     display: grid;
     grid-template-areas:'category-1 category-2 .'
-                        'category-3  category-4 category-5' 
+                        'category-3 category-4 category-5'
                         'category-6 category-7 .';
     gap: 10px;
 }
@@ -1100,13 +1106,13 @@ li.end-category{
     letter-spacing: 0.5px;
 }
 
-.filter-category-1{ grid-area: category-1; width: 120px;}
-.filter-category-2{ grid-area: category-2; width: 110px; margin-left: -15px;}
-.filter-category-3{ grid-area: category-3; width: 100px; margin-left: -1px;}
-.filter-category-4{ grid-area: category-4; width: 80px; margin-left: -34px;}
-.filter-category-5{ grid-area: category-5; width: 60px; margin-left: -65px;}
-.filter-category-6{ grid-area: category-6; width: 130px;}
-.filter-category-7{ grid-area: category-7; width: 110px; margin-left: -4px;}
+.filter-category-1{ grid-area: category-1;}
+.filter-category-2{ grid-area: category-2;}
+.filter-category-3{ grid-area: category-3;}
+.filter-category-4{ grid-area: category-4;}
+.filter-category-5{ grid-area: category-5;}
+.filter-category-6{ grid-area: category-6;}
+.filter-category-7{ grid-area: category-7;}
 
 .footer a, .footer p{
     color:#ffffff;
@@ -1165,12 +1171,7 @@ li.end-category{
     height: 45px;
     border-radius: 22px;
     background-color: #303f9f;
-}
-
-.footer-sub-form-submit p{
     font-size: 16px;
-    text-align: center;
-    margin-top: 12px;
     letter-spacing: 1.2px;
 }
 
@@ -1230,18 +1231,20 @@ li.end-category{
     margin-bottom: 5px;
 }
 
-.panel p:not(:nth-child(1)){
+.panel a:not(:nth-child(1)){
     margin: 17px 0px 10px 0px;
 }
 
 .panel a{
     font-family: 'Open Sans', sans-serif;
     color: #a5a4a4;
+    display: block;
+    font-size:14px;
 }
 
 .tweets{
     border-bottom: 1px solid #646464;
-    margin-top: 14px;
+    margin-top: 13px;
     padding-bottom: 8px;
 
 }
@@ -1274,9 +1277,9 @@ li.end-category{
 }
 
 .tweet_vessel a {
-    font-size:13.5px;
+    font-size:14px;
     color: #d6d6d6;
-    line-height: 1.45;
+    line-height: 1.495;
     letter-spacing: 0.4px;
     word-spacing: 0.5px;
 }
@@ -1308,8 +1311,12 @@ li.end-category{
     margin-left:-3px;
 }
 
-.flickr-newsletter-title{
+.flickr-title{
     margin-bottom: 26px;
+}
+
+.newsletter-title{
+    margin-bottom: 16px;
 }
 
 .flickr-widget-collage{
@@ -1319,40 +1326,30 @@ li.end-category{
     grid-row-gap: 4px;
 }
 
-.newsletter-widget div > input, .newsletter-widget div > textarea{
+.newsletter-widget input, .newsletter-widget textarea, .newsletter-widget button{
     width: 270px;
-    height: 45px;
     border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.newsletter-widget input:not(:nth-last-child(1)), .newsletter-widget textarea{
+    margin-top: 10px;
+    height: 45px;
+    padding: 13px 14px;
+    font-size: 14px;
     border: 1px solid #646464;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    padding: 13px 14px;
-    color: #ffffff;
 }
 
-.newsletter-widget > div:not(:nth-child(5)){
-    margin-top: 10px;
-}
-
-.newsletter-widget > div textarea{
+.newsletter-widget textarea{
     height: 120px;
 }
 
 .newsletter-widget-sub{
-    width: 270px;
     height: 40px;
-    border-radius: 4px;
     margin-top: 6px;
     background-color: #303030;
-}
-
-.newsletter-widget > div p{
-    padding-top: 13px;
-    padding-bottom: 15px;
-    text-align: center;
-    letter-spacing: 0.7px;
     font-size: 12px;
 }
 
@@ -1377,7 +1374,7 @@ li.end-category{
     width: 220px;
     height: 35px;
     border-radius: 17px;
-    margin:0px 57px 0px 138px;
+    margin:0px 56px 0px 138px;
     padding:0px 40px 0px 21px;
     letter-spacing: 0.7px;
     background-color: transparent;
@@ -1417,10 +1414,5 @@ li.end-category{
     font-size: 10px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    color: #929292;
-}
-
-.signIn a p {
-    margin-left: 6px;
     color: #929292;
 }
