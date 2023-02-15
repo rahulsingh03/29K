@@ -702,14 +702,8 @@
         
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() { 
-            for(i=0; i<acc.length; i++){
-                    if (acc[i].classList.contains("active")){
-                        acc[i].nextElementSibling.style.display = "none";
-                        acc[i].style.marginBottom = '5px';
-                        acc[i].classList.remove("active");
-                    }
-                }
-            this.classList.toggle("active");
+            
+            this.classList.add("active");
             var panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
@@ -717,14 +711,24 @@
                 this.style.marginBottom = '5px';
                 this.style.borderBottomLeftRadius = '4px';
                 this.style.borderBottomRightRadius = '4px';
-            } else {
+                this.classList.remove("active");
+                
+            } else{
+                for(i=0; i<acc.length; i++){
+                    if (acc[i].classList.contains("active")){
+                        acc[i].nextElementSibling.style.display = "none";
+                        acc[i].style.marginBottom = '5px';
+                        acc[i].getElementsByTagName('span')[0].innerText= 'add';
+                        acc[i].style.borderBottomLeftRadius = '4px';
+                        acc[i].style.borderBottomRightRadius = '4px';
+                    }
+                }
                 panel.style.display = "block";
                 this.getElementsByTagName('span')[0].innerText = 'remove';
                 this.style.marginBottom = '0px';
                 this.style.borderBottomLeftRadius = '0px';
                 this.style.borderBottomRightRadius = '0px';
             }
-
           });
         }
         // nav-bar active
